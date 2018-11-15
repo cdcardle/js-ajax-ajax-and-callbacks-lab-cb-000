@@ -18,17 +18,3 @@ function searchRepositories() {
 document.addEventListener('DOMContentLoaded', function(event) {
   Handlebars.registerPartial('authorPartial', $("author-partial-template").html);
 });
-
-// <script id="repo-template" type="text/x-handlebars-template">
-//   <ul>
-//     {{#each this}}
-//       <li>
-//         <h2><a href="{{html_url}}">{{name}}</a></h2>
-//         <section>
-//           <header><h4>Created By {{owner.login}}</h4></header>
-//           <a href="#" data-repository="{{name }}" data-owner="{{owner.login}}" onclick="showCommits(this)">Get Commits</a>
-//         </section>
-//       </li>
-//     {{/each}}
-//   </ul>
-// </script>
