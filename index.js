@@ -15,3 +15,7 @@ function searchRepositories() {
     $("#results").html(repoList)
   }).fail(error => displayError());
 }
+
+function showCommits() {
+
+}
