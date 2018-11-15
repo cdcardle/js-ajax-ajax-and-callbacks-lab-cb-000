@@ -8,7 +8,7 @@ function displayError() {
 function searchRepositories() {
   const searchTerms = $('#searchTerms').val();
   $.get(`https://api.github.com/search/repositories?q=${searchTerms}`, function(data) {
-    const src = document.getElementById('#repository-template').innerHTML;
+    const src = document.getElementById('#repository-template').html;
     console.log(src);
     const template = Handlebars.compile(src)
     const repoList = template(data.items)
