@@ -45,7 +45,12 @@
         {{#each this}}
           <li>
             <h2><a href="{{html_url}}">{{name}}</a></h2>
-            {{> authorPartial owner}}
+            <!-- {{> authorPartial owner}} -->
+            <section>
+              <header><h4>Created By {{login}}</h4></header>
+              <img src="{{avatar_url}}" height="32" width="32">
+
+            </section>
             <p>Name: {{name}}</p>
           </li>
         {{/each}}
