@@ -7,7 +7,7 @@ function displayError() {
 
 function searchRepositories() {
   const searchTerms = $('#searchTerms').val();
-  console.log(src);
+  console.log(searchTerms);
   $.get(`https://api.github.com/search/repositories?q=${searchTerms}`, function(data) {
     const src = $('#repository-template').html;
     console.log(src);
