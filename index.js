@@ -11,6 +11,7 @@ $(document).ready(function (){
       const template = Handlebars.compile(src)
       const repoList = template(data.items)
       $("#results").html(repoList)
+      console.log(template);
     }).fail(error => displayError());
   }
 
