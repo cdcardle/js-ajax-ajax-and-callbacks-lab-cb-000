@@ -10,7 +10,7 @@ function searchRepositories() {
   $.get(`https://api.github.com/search/repositories?q=${searchTerms}`, function(data) {
     const src = document.getElementById('repository-template').innerHTML;
     const template = Handlebars.compile(src);
-    console.log(data.items);
+    console.log(template);
     const repoList = template(data.items);
     $("#results").html(repoList)
   }).fail(error => displayError());
