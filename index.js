@@ -11,7 +11,7 @@ function searchRepositories() {
     let src = document.getElementById('repository-template').innerHTML;
     const template = Handlebars.compile(src);
     const repoList = template(data.items);
-    console.log(repoList);
+    console.log(data.items);
     $("#results").html(repoList)
   }).fail(error => displayError());
 }
