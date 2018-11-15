@@ -17,9 +17,9 @@ function searchRepositories() {
   }).fail(error => displayError());
 }
 
-document.addEventListener('DOMContentLoaded', function(event) {
-  Handlebars.registerPartial(
-    'authorPartial',
-    document.getElementById('author-partial-template').innerHTML
-  );
-});
+// document.addEventListener('DOMContentLoaded', function(event) {
+//   Handlebars.registerPartial(
+//     'authorPartial',
+//     document.getElementById('author-partial-template').innerHTML
+//   );
+// });
