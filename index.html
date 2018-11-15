@@ -44,14 +44,14 @@
       <ul>
         {{#each this}}
           <li>
-            <h2><a href="{{owner.html_url}}">{{owner.name}}</a></h2>
+            <h2><a href="{{html_url}}">{{name}}</a></h2>
 
             <section>
               <header><h4>Created By {{owner.login}}</h4></header>
               <img src="{{owner.avatar_url}}" height="32" width="32">
 
             </section>
-            <p>Name: {{owner.name}}</p>
+            <p>Name: {{name}}</p>
           </li>
         {{/each}}
       </ul>
