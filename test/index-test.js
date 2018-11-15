@@ -17,7 +17,6 @@ describe('index.js', () => {
 
   before(() => {
     window.$ = require('jquery')
-    window.Handlebars = require('handlebars');
   })
 
   describe('index.html', () => {
