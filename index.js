@@ -16,10 +16,7 @@ function searchRepositories() {
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {
-  Handlebars.registerPartial(
-    'authorPartial',
-    $('author-partial-template').innerHTML
-  );
+  Handlebars.registerPartial('authorPartial', $('author-partial-template').html);
 });
 
 // <script id="repo-template" type="text/x-handlebars-template">
