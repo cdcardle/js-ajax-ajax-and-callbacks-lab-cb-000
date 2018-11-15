@@ -17,5 +17,5 @@ function searchRepositories() {
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {
-  Handlebars.registerPartial('authorPartial', $("author-partial-template").html);
+  Handlebars.registerPartial('authorPartial', $("#author-partial-template").html);
 });
