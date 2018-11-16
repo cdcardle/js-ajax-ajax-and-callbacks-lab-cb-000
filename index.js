@@ -20,6 +20,7 @@ function showCommits(el) {
     let src = document.getElementById('commits-template').innerHTML;
     const template = Handlebars.compile(src);
     const commitsList = template(data);
+    console.log(data)
     $("#details").html(commitsList)
   }).fail(error => displayError());
 }
