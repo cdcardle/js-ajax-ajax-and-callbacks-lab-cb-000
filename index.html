@@ -51,7 +51,7 @@
               <a href={{owner.url}}>{{name}}'s GitHub'</a>
             </section>
             <p>Description: {{description}}</p>
-            <p><a href="#" onclick="showCommits(this)">Show Commits</a></p>
+            <p><a href="#" data-repository="{{name}}" data-owner="{{owner.login}}" onclick="showCommits(this)">Show Commits</a></p>
           </li>
         {{/each}}
       </ul>
