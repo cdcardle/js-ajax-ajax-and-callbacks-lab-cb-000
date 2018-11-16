@@ -62,9 +62,9 @@
           <li>
             <p>{{sha}}</p>
             <section>
-              <header><h4>Created By {{commiter.login}}</h4></header>
-              <img src="{{commiter.avatar_url}}" height="50" width="50"><br>
-              <a href={{commiter.url}}>{{name}}'s GitHub'</a>
+              <header><h4>Created By {{commit.author.login}}</h4></header>
+              <!-- <img src="{{commiter.avatar_url}}" height="50" width="50"><br>
+              <a href={{commiter.url}}>{{name}}'s GitHub'</a> -->
             </section>
           </li>
         {{/each}}
