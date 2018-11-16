@@ -16,7 +16,7 @@ function searchRepositories() {
 }
 
 function showCommits(el) {
-  $.get(`https://api.github.com/repos/${el.dataset.owner}/${el.dataset.repository}/commits`, function(data) {
+  $.get(`https://api.github.com/repos/${el.data.owner}/${el.data.repository}/commits`, function(data) {
     let src = document.getElementById('commits-template').innerHTML;
     console.log(data);
     const template = Handlebars.compile(src);
