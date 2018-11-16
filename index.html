@@ -51,11 +51,19 @@
               <a href={{owner.url}}>{{name}}'s GitHub'</a>
             </section>
             <p>Description: {{description}}</p>
+            <p><a href="#" onclick="showCommits()">Show Commits</a></p>
           </li>
         {{/each}}
       </ul>
     </script>
-
-
+    <script id="commits-template" type="text/x-handlebars-template">
+      <ul>
+        {{#each this}}
+          <p>{{sha}}</p>
+          <p>{{}}</p>
+          <p>{{sha}}</p>
+        {{/each}}
+      </ul>
+    </script>
   </body>
 </html>
