@@ -59,9 +59,14 @@
     <script id="commits-template" type="text/x-handlebars-template">
       <ul>
         {{#each this}}
-          <p>{{sha}}</p>
-          <p>{{}}</p>
-          <p>{{sha}}</p>
+          <li>
+            <p>{{sha}}</p>
+            <section>
+              <header><h4>Created By {{owner.login}}</h4></header>
+              <img src="{{owner.avatar_url}}" height="50" width="50"><br>
+              <a href={{owner.url}}>{{name}}'s GitHub'</a>
+            </section>
+          </li>
         {{/each}}
       </ul>
     </script>
